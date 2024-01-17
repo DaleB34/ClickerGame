@@ -23,14 +23,14 @@ public class MainActivity extends AppCompatActivity {
             {
                 money++;
                 moneyDisplay.setText("You have " + money + "$");
+
+                if (money > 100)
+                {
+                    money = -1;
+                    moneyDisplay.setText("Numbers don't go past 100, so you're going back to 0$");
+                }
             }
         });
-
-        if (money > 100)
-        {
-            money = -1;
-            moneyDisplay.setText("Numbers don't go past 100, so you're going back to 0$");
-        }
 
     }
 }
