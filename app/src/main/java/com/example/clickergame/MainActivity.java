@@ -35,7 +35,22 @@ public class MainActivity extends AppCompatActivity {
                 {
                     buyDisplay.setText("You can buy french fries!");
                 }
-                
+                else if(money < 20)
+                {
+                    buyDisplay.setText("You can buy one piece of clothing from Target!");
+                }
+                else if (money < 40)
+                {
+                    buyDisplay.setText("You can buy a dish from a steakhouse!");
+                }
+                else if(money < 80)
+                {
+                    buyDisplay.setText("You can buy a high quality video game!");
+                }
+                else
+                {
+                    buyDisplay.setText("You can buy at least 80 rubber ducks!");
+                }
             }
         });
 
