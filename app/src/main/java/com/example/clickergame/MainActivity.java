@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ImageView green = (ImageView) findViewById(R.id.greenImg);
         TextView moneyDisplay = (TextView) findViewById(R.id.moneyView);
+        TextView buyDisplay = (TextView) findViewById(R.id.buyView);
 
         green.setOnClickListener(new View.OnClickListener()
         {
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                     money = -1;
                     moneyDisplay.setText("Numbers don't go past 100, so you're going back to 0$");
                 }
+
+
             }
         });
 
