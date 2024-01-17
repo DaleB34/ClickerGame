@@ -30,4 +30,12 @@
         android:textAlignment="center"
         android:textSize="40dp"/>
 
+    <TextView
+        android:id="@+id/buyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You can't buy anything"
+        android:textAlignment="center"
+        android:textSize="40dp"/>
+
 </LinearLayout>
